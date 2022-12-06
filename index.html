@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            .flex {
+                display: flex
+            }
+            .flexbox1 {
+                margin-top: 50px;
+                margin-left: 70px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 35px;
+            }
+            .flexbox2 {
+                margin-top: 20px;
+                margin-left: 70px;
+                margin-bottom: 40px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 26px;
+            }
+            .flexbox3 {
+                justify-content: space-between;
+            }
+            .flexbox4 {
+                margin-top: 30px;
+                margin-left: 85px;
+                margin-bottom: 0px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 22px;
+            }
+            .flexbox5 {
+                margin-top: 30px;
+                margin-left: 70px;
+                margin-bottom: 0px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 30px;
+            }
+            .button {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 20px;
+                cursor: pointer;
+                border: none;
+            }
+            .button1 {
+                background-color: white;
+                outline-color: white;
+
+            }
+            .text {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 18px;
+                line-height: 2;
+            }
+            .text1 {
+                line-height: 2;
+            }
+
+        </style>
+    </head>
+    <body style="background-color:#AEB6BF;">
+        <div class="flex flexbox3">
+            <div>
+                <button class="button button1" style="background-color:#AEB6BF;">
+                    Harrison Trahan
+                </button>
+            </div>
+            <div>
+                <button class="button button1" onclick="document.getElementById('Projects').scrollIntoView();" style="background-color:#AEB6BF;">
+                    Projects
+                </button>
+                <button class="button button1" style="background-color:#AEB6BF;">
+                    <a href="https://www.linkedin.com/in/harrison-trahan-0985a0217/">LinkedIn</a>
+                </button>
+            </div>
+        </div>
+        <div>
+            <div class="flex flexbox1" id="Intro">
+                <header>Hi I'm Harrison!</header>
+            </div>
+            <p class="flex flexbox2 text">
+                <b></b>
+            </p>
+            <p class="flex flexbox2">
+                I'm a passionate and hardowrking computer science economics major <br> and member of the wrestling team at Brown University.
+            </p>
+        </div>
+        <div id="Projects">
+            <div class="flex flexbox5">
+                <header>My Projects</header>
+            </div>
+            <p class="flex flexbox4">First React Project</p>
+            <div class="flex flexbox2">
+                <video width="420" height="340" controls>
+                    <source src="photos/development-new.mov">
+                </video>
+                <p class="flex flexbox2 text">For this project, I made a list of politicians whom might be running in the 2024 <br>
+                    presidential election. The site has the capability to filter based on the parties of <br> the candidates,
+                    and can sort the candidates by number of votes. Lastly, users <br> can choose to follow different politicians
+                    and see the total number of votes the <br> politicians they have followed have. This project was my first time 
+                    using React <br> and it helped me learn and understand the language and its components. If <br> I were to do this 
+                    project again I would add more CSS and styling to the site to <br> make it more visually appealing. 
+                </p>
+            </div>
+            <p class="flex flexbox4">Figma Interactive UI</p>
+            <div class="flex flexbox2">
+                <video width="420" height="340" controls>
+                    <source src="photos/responsive-redesign.mov">
+                </video>
+                <p class="flex flexbox2 text">In a group with three other people, we chose a startup to design an interface<br>
+                    for. We chose NFTScoring, a platform used to buy, sell, and interact with NFTs. <br> We used Figma to develop a 
+                    high-fidelity prototype for this UI where our goal <br> was to give the user a smooth easy, and enjoyable experience 
+                    while using the <br>interface. This project helped me learn a lot about how users interact with <br>interfaces, and 
+                    how to utilize these interactions in a way that benefits everybody.
+                </p>
+            </div>
+            <p class="flex flexbox4">HTML Redesign</p>
+            <div class="flex flexbox2">
+                <video width="420" height="340" controls>
+                    <source src="photos/iterative design.mov">
+                </video>
+                <p class="flex flexbox2 text">My first experience with HTML was redesigning a website. My choice was <br>
+                    Goat, a platform for selling and buying everything fashion from shoes and apparel <br> to luxury items.
+                    This project was really a crash course in HTML for me, learning <br> the ins and outs of CSS styling, inserting
+                    pictures, and overall getting comfortable <br>  with the language. The site is not interactive, but the main
+                    goal was design not <br> functionality. If I could redo this project, I would add functionality including <br>
+                    different pages for specific products as well as a cleaner and more appealing design.
+                </p>
+            </div>
+            <p class="flex flexbox4">Python Search Engine</p>
+            <div class="flex flexbox2">
+                <video width="420" height="340" controls>
+                    <source src="photos/Seach Engine Algorithm.mov">
+                </video>
+                <p class="flex flexbox2 text">
+                    This project is a search engine algorithm written in python. Not only was this one <br> of my first projects in python,
+                   but it was my first time learning about what is behind <br> the scenes of a search engine, including indexing and
+                   pagerank. Using XML files and <br> text files was just the very tip of the iceberg when it comes to search engines but
+                   it was <br> super interesting and I would love to make another algorithm like this in the future. <br> I recently learned
+                   a new way to write a pagerank function using linear algebra and I <br> would be interested to see it implemented into this
+                   project.
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>
+</html>
